@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css?family=Liu+Jian+Mao+Cao&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Bowlby+One+SC&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.logo {
+    text-align: center;
+    padding-left: 0;
+    padding-right: 0;
+    height: 100px;
+    background: black;
+    display: flex;
+}
+
+.logo a .farfalla {
+    padding-left: 30px;
+    width: 80px;
+
+}
+
+.logo a h1 {
+    font-size: 50px;
+    padding-top: 20px;
+    text-transform: uppercase;
+    color: brown;
+    font-family: 'Bowlby One SC', cursive;
+}
+
+.menu li {
+    display: inline-block;
+    padding: 40px 0;
+    font-size: 15px;
+    font-family: 'Liu Jian Mao Cao', cursive;
+
+}
+
+.menu li a {
+
+    text-transform: uppercase;
+    color: red;
+    text-decoration: none;
+
+}
+
+
+
+.menu li a:hover {
+    border-bottom: 2px solid white;
+    padding: 0px 10px;
+    color: white;
+}
+
+.menu a {
+    padding: 0 10px;
+}
+
+#myBtn {
+    text-transform: uppercase;
+    background-color: #000;
+    color: red;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+    font-family: 'Liu Jian Mao Cao', cursive;
+}
+
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+
+.modal-content {
+    position: relative;
+    background-color: #E1BEE7;
+    margin: auto;
+    padding: 0;
+    border: 5px solid white;
+    width: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+
+
+
+@keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0
+    }
+
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
+
+
+.close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header {
+    padding: 2px 16px;
+    background-color: red;
+    color: white;
+}
+
+.modal-body {
+    color: white;
+    background-color: green;
+    padding: 2px 16px;
+}
+
+.modal-footer {
+    padding: 2px 16px;
+    background-color: green;
+    color: white;
+}
+
+
+.home {
+
+    padding: 0 80px;
+}
+
+.mike p {
+
+    font-size: 20px;
+    font-family: 'Bowlby One SC', cursive;
+}
+
+.home p {
+
+    font-size: 20px;
+    font-family: 'Bowlby One SC', cursive;
+}
+
+.mike {
+
+    display: flex;
+    padding: 20px 80px;
+}
+
+.mike img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.rew a {
+    display: block;
+    text-align: center;
+}
+
+.gal {
+    text-align: center;
+
+}
+
+.gal img {
+    width: 400px;
+    height: auto;
+}
+
+.menu_comment {
+    padding: 0 80px;
+}
+
+.menu_list {
+    display: flex;
+    justify-content: space-around;
+}
+
+.gor {
+    width: 500px;
+}
+
+.salat {
+    width: 500px;
+}
+
+.pasta {
+    width: 500px;
+}
+
+.snack {
+    width: 500px;
+}
