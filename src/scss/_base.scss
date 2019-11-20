@@ -263,7 +263,7 @@ p {
 
     .menu a.icon {
         display: block;
-        color: red;
+        color: #633e57;
         font-size: 30px;
     }
 
@@ -290,7 +290,7 @@ p {
 
     .responsive ul li a {
         display: block;
-        color: red;
+        color: #633e57;
 
     }
 
@@ -299,13 +299,14 @@ p {
     }
 
     .responsive ul {
-        background: #000;
+        background: burlywood;
     }
 
     .responsive ul li #myBtn {
         display: block;
-        color: red;
-        background: #000;
+        color: #633e57;
+    text-decoration: none;
+    font-weight: 700;
     }
 
 
