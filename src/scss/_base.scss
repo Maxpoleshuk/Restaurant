@@ -1,9 +1,23 @@
 @import url('https://fonts.googleapis.com/css?family=Liu+Jian+Mao+Cao&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Bowlby+One+SC&display=swap');
 
+$font-stack: 20px 'Bowlby One SC',
+cursive;
+
 * {
     margin: 0;
     padding: 0;
+}
+
+.header_top {
+    background: black;
+}
+
+.container {
+    max-width: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+    justify-content: center;
 }
 
 .logo {
@@ -11,27 +25,28 @@
     padding-left: 0;
     padding-right: 0;
     height: 100px;
-    background: black;
     display: flex;
 }
 
 .logo a .farfalla {
-    padding-left: 30px;
     width: 80px;
 
 }
 
 .logo a h1 {
-    font-size: 50px;
+    font-size: 40px;
     padding-top: 20px;
     text-transform: uppercase;
     color: brown;
     font-family: 'Bowlby One SC', cursive;
 }
+.navigation {
+    margin-left: 70px;
+}
 
 .menu li {
     display: inline-block;
-    padding: 40px 0;
+    padding: 30px 0;
     font-size: 15px;
     font-family: 'Liu Jian Mao Cao', cursive;
 
@@ -49,12 +64,15 @@
 
 .menu li a:hover {
     border-bottom: 2px solid white;
-    padding: 0px 10px;
     color: white;
 }
 
 .menu a {
-    padding: 0 10px;
+    margin: 0 10px;
+}
+
+.menu .icon {
+    display: none;
 }
 
 #myBtn {
@@ -67,6 +85,10 @@
     font-family: 'Liu Jian Mao Cao', cursive;
 }
 
+#myBtn:hover {
+    color: white;
+    border-bottom: 2px solid white;
+}
 
 .modal {
     display: none;
@@ -151,14 +173,12 @@
 
 .mike p {
 
-    font-size: 20px;
-    font-family: 'Bowlby One SC', cursive;
+    font: $font-stack;
 }
 
 .home p {
 
-    font-size: 20px;
-    font-family: 'Bowlby One SC', cursive;
+    font: $font-stack;
 }
 
 .mike {
@@ -211,3 +231,58 @@
 .snack {
     width: 500px;
 }
+
+
+
+
+
+@media (max-width: 1170px) {
+    .menu a {
+        display: none;
+    }
+
+    #myBtn {
+        display: none;
+    }
+
+    .menu a.icon {
+        display: block;
+        color: red;
+        font-size: 30px;
+    }
+
+    nav {
+        width: 100%;
+    }
+
+    .menu .responsive {
+        position: relative;
+        top: 50px;
+        left: -200px;
+    }
+
+    .menu .responsive a.icon {
+        position: absolute;
+        top: -50px;
+        right: -200px;
+    }
+
+
+
+
+    header .menu .responsive {
+        height: 340px;
+    }
+
+
+
+
+}
+
+@media (max-width: 992px) {}
+
+@media (max-width: 767px) {}
+
+@media (max-width: 480px) {}
+
+@media (max-width: 320px) {}
