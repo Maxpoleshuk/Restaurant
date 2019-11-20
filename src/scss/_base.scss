@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Liu+Jian+Mao+Cao&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Bowlby+One+SC&display=swap');
 
-$font-stack: 20px 'Bowlby One SC',
+$font-stack: 25px 'Bowlby One SC',
 cursive;
 
 * {
@@ -10,7 +10,7 @@ cursive;
 }
 
 .header_top {
-    background: black;
+    background: burlywood;
 }
 
 .container {
@@ -28,18 +28,12 @@ cursive;
     display: flex;
 }
 
-.logo a .farfalla {
-    width: 80px;
+.logo a .sicil {
+    margin-left: 80px;
+    width: 150px;
 
 }
 
-.logo a h1 {
-    font-size: 40px;
-    padding-top: 20px;
-    text-transform: uppercase;
-    color: brown;
-    font-family: 'Bowlby One SC', cursive;
-}
 
 .navigation {
     margin-left: 70px;
@@ -56,9 +50,9 @@ cursive;
 .menu li a {
 
     text-transform: uppercase;
-    color: red;
+    color: #633e57;
     text-decoration: none;
-
+    font-weight: 700;
 }
 
 
@@ -78,8 +72,9 @@ cursive;
 
 #myBtn {
     text-transform: uppercase;
-    background-color: #000;
-    color: red;
+    background-color: burlywood;
+    font-weight: 700;
+    color: #633e57;
     font-size: 15px;
     border: none;
     cursor: pointer;
@@ -166,33 +161,53 @@ cursive;
     color: white;
 }
 
+.chef {
+    display: flex;
+    justify-content: space-around;
+
+
+
+}
+
+.bruno {
+    width: 470px;
+    margin: 100px;
+
+}
+
+h1 {
+    color: #633e57;
+    font-size: 50px;
+    padding-bottom: 30px;
+}
+
+p {
+    color: #633e57;
+    font: $font-stack;
+
+}
 
 .home {
-
-    padding: 0 80px;
+    width: 470px;
 }
 
-.mike p {
 
-    font: $font-stack;
-}
-
-.home p {
-
-    font: $font-stack;
-}
-
-.mike {
-
-    display: flex;
-    padding: 20px 80px;
-}
-
-.mike img {
+.home img {
     width: 100%;
     border-radius: 50%;
 }
-
+.pic {
+    display: flex;
+    justify-content: space-around;
+}
+.pic img {
+    width: 20%;
+}
+.prost {
+    padding: 70px 0;
+    width: 80%;
+    margin-left: 10%;
+}
 .rew a {
     display: block;
     text-align: center;
@@ -375,9 +390,11 @@ cursive;
         padding-right: 0;
         font-size: 27px;
     }
+
     .menu ul {
         padding-top: 0;
     }
+
     .menu ul li {
         padding-top: 0;
     }
