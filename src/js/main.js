@@ -19,7 +19,7 @@ window.onclick = function(event) {
 var menu = document.getElementById('myMenu');
 menu.onclick = function showMenu() {
   if(menu.className === "menu") {
-      menu.className += "responsive";
+      menu.className += " responsive";
   } else {
       menu.className = 'menu';
   }

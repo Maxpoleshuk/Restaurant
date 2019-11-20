@@ -255,13 +255,15 @@ cursive;
         width: 100%;
     }
 
-    .menu .responsive {
+    .responsive {
         position: relative;
-        top: 50px;
+        top: 100px;
         left: -200px;
+        height: 200px;
+        width: 200px;
     }
 
-    .menu .responsive a.icon {
+    .responsive a.icon {
         position: absolute;
         top: -50px;
         right: -200px;
@@ -270,19 +272,64 @@ cursive;
 
 
 
-    header .menu .responsive {
-        height: 340px;
+    .responsive ul li a{
+       display: block;
+       color: red;
+    
     }
+    .responsive ul li {
+        padding: 10px;
+    }
+    .responsive ul{
+        background: #000;
+     }
+     .responsive ul li #myBtn{
+        display: block;
+        color: red;
+        background: #000;
+     }
 
 
 
 
 }
 
-@media (max-width: 992px) {}
+@media (max-width: 992px) {
+    .responsive {
+        position: relative;
+        top: 100px;
+        left: -250px;
+        height: 200px;
+        width: 200px;
+    }
+}
 
-@media (max-width: 767px) {}
+@media (max-width: 767px) {
+    .responsive {
+        position: relative;
+        top: 100px;
+        left: -270px;
+        height: 340px;
+        width: 200px;
+    }
+}
 
-@media (max-width: 480px) {}
+@media (max-width: 480px) {
+    .responsive {
+        position: relative;
+        top: 100px;
+        left: -350px;
+        height: 340px;
+        width: 200px;
+    }
+}
 
-@media (max-width: 320px) {}
+@media (max-width: 320px) {
+    .responsive {
+        position: relative;
+        top: 100px;
+        left: -400px;
+        height: 340px;
+        width: 200px;
+    }
+}
