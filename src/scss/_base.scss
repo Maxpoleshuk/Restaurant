@@ -40,6 +40,7 @@ cursive;
     color: brown;
     font-family: 'Bowlby One SC', cursive;
 }
+
 .navigation {
     margin-left: 70px;
 }
@@ -272,22 +273,25 @@ cursive;
 
 
 
-    .responsive ul li a{
-       display: block;
-       color: red;
-    
+    .responsive ul li a {
+        display: block;
+        color: red;
+
     }
+
     .responsive ul li {
         padding: 10px;
     }
-    .responsive ul{
+
+    .responsive ul {
         background: #000;
-     }
-     .responsive ul li #myBtn{
+    }
+
+    .responsive ul li #myBtn {
         display: block;
         color: red;
         background: #000;
-     }
+    }
 
 
 
@@ -297,39 +301,112 @@ cursive;
 @media (max-width: 992px) {
     .responsive {
         position: relative;
-        top: 100px;
+        top: 90px;
         left: -250px;
         height: 200px;
         width: 200px;
+    }
+
+    .logo {
+        height: 90px;
+    }
+
+    .logo a .farfalla {
+        width: 60px;
+
+    }
+
+    .logo a h1 {
+        font-size: 35px;
     }
 }
 
 @media (max-width: 767px) {
     .responsive {
         position: relative;
-        top: 100px;
+        top: 70px;
         left: -270px;
         height: 340px;
         width: 200px;
+    }
+
+    .menu a.icon {
+        font-size: 25px;
+    }
+
+    .logo {
+        height: 70px;
+    }
+
+    .logo a .farfalla {
+        width: 50px;
+
+    }
+
+    .logo a h1 {
+        font-size: 30px;
     }
 }
 
 @media (max-width: 480px) {
     .responsive {
         position: relative;
-        top: 100px;
-        left: -350px;
+        top: 50px;
+        left: -300px;
         height: 340px;
         width: 200px;
+    }
+
+    .menu a.icon {
+        font-size: 25px;
+    }
+
+    .logo {
+        height: 50px;
+    }
+
+    .logo a .farfalla {
+        width: 40px;
+
+    }
+
+    .logo a h1 {
+        padding-top: 0;
+        padding-right: 0;
+        font-size: 27px;
+    }
+    .menu ul {
+        padding-top: 0;
+    }
+    .menu ul li {
+        padding-top: 0;
     }
 }
 
 @media (max-width: 320px) {
     .responsive {
         position: relative;
-        top: 100px;
-        left: -400px;
+        top: 30px;
+        left: -300px;
         height: 340px;
         width: 200px;
+    }
+
+    .menu a.icon {
+        font-size: 20px;
+    }
+
+    .logo {
+        height: 30px;
+    }
+
+    .logo a .farfalla {
+        width: 30px;
+
+    }
+
+    .logo a h1 {
+
+        font-size: 20px;
     }
 }
