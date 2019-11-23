@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Liu+Jian+Mao+Cao&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Bowlby+One+SC&display=swap');
 
-$font-stack: 25px 'Bowlby One SC',
+$font-stack: 20px 'Bowlby One SC',
 cursive;
 
 * {
@@ -9,156 +9,11 @@ cursive;
     padding: 0;
 }
 
-.header_top {
-    background: burlywood;
-}
-
 .container {
     max-width: 100%;
     padding-left: 30px;
     padding-right: 30px;
     justify-content: center;
-}
-
-.logo {
-    text-align: center;
-    padding-left: 0;
-    padding-right: 0;
-    height: 100px;
-    display: flex;
-}
-
-.logo a .sicil {
-    margin-left: 80px;
-    width: 150px;
-
-}
-
-
-.navigation {
-    margin-left: 70px;
-}
-
-.menu li {
-    display: inline-block;
-    padding: 30px 0;
-    font-size: 15px;
-    font-family: 'Liu Jian Mao Cao', cursive;
-
-}
-
-.menu li a {
-
-    text-transform: uppercase;
-    color: #633e57;
-    text-decoration: none;
-    font-weight: 700;
-}
-
-
-
-.menu li a:hover {
-    border-bottom: 2px solid white;
-    color: white;
-}
-
-.menu a {
-    margin: 0 10px;
-}
-
-.menu .icon {
-    display: none;
-}
-
-#myBtn {
-    text-transform: uppercase;
-    background-color: burlywood;
-    font-weight: 700;
-    color: #633e57;
-    font-size: 15px;
-    border: none;
-    cursor: pointer;
-    font-family: 'Liu Jian Mao Cao', cursive;
-}
-
-#myBtn:hover {
-    color: white;
-    border-bottom: 2px solid white;
-}
-
-.modal {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    padding-top: 100px;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgb(0, 0, 0);
-    background-color: rgba(0, 0, 0, 0.4);
-}
-
-
-.modal-content {
-    position: relative;
-    background-color: #E1BEE7;
-    margin: auto;
-    padding: 0;
-    border: 5px solid white;
-    width: 50%;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    animation-name: animatetop;
-    animation-duration: 0.4s
-}
-
-
-
-
-@keyframes animatetop {
-    from {
-        top: -300px;
-        opacity: 0
-    }
-
-    to {
-        top: 0;
-        opacity: 1
-    }
-}
-
-
-.close {
-    color: white;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-    color: #000;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-.modal-header {
-    padding: 2px 16px;
-    background-color: red;
-    color: white;
-}
-
-.modal-body {
-    color: white;
-    background-color: green;
-    padding: 2px 16px;
-}
-
-.modal-footer {
-    padding: 2px 16px;
-    background-color: green;
-    color: white;
 }
 
 .chef {
@@ -179,6 +34,10 @@ h1 {
     color: #633e57;
     font-size: 50px;
     padding-bottom: 30px;
+}
+h3 {
+    color: #633e57;
+    font-size: 30px;
 }
 
 p {
@@ -201,7 +60,14 @@ p {
     justify-content: space-around;
 }
 .pic img {
-    width: 20%;
+    width: 23%;
+}
+.pic_last {
+    display: flex;
+    justify-content: space-around;
+}
+.pic_last img {
+    width: 30%;
 }
 .prost {
     padding: 70px 0;
@@ -247,184 +113,25 @@ p {
 .snack {
     width: 500px;
 }
-
-
-
-
-
-@media (max-width: 1170px) {
-    .menu a {
-        display: none;
-    }
-
-    #myBtn {
-        display: none;
-    }
-
-    .menu a.icon {
-        display: block;
-        color: #633e57;
-        font-size: 30px;
-    }
-
-    nav {
-        width: 100%;
-    }
-
-    .responsive {
-        position: relative;
-        top: 100px;
-        left: -200px;
-        height: 200px;
-        width: 200px;
-    }
-
-    .responsive a.icon {
-        position: absolute;
-        top: -50px;
-        right: -200px;
-    }
-
-
-
-
-    .responsive ul li a {
-        display: block;
-        color: #633e57;
-
-    }
-
-    .responsive ul li {
-        padding: 10px;
-    }
-
-    .responsive ul {
-        background: burlywood;
-    }
-
-    .responsive ul li #myBtn {
-        display: block;
-        color: #633e57;
-    text-decoration: none;
-    font-weight: 700;
-    }
-
-
-
-
+.food_bottom {
+    display: flex;
+    justify-content: space-around;
+}
+.food_top {
+    margin: 50px 0;
 }
 
-@media (max-width: 992px) {
-    .responsive {
-        position: relative;
-        top: 90px;
-        left: -250px;
-        height: 200px;
-        width: 200px;
-    }
-
-    .logo {
-        height: 90px;
-    }
-
-    .logo a .farfalla {
-        width: 60px;
-
-    }
-
-    .logo a h1 {
-        font-size: 35px;
-    }
+.food_h {
+    text-align: center;
+    margin: 40px 0;
+}
+.food {
+    width: 500px;
+}
+.food h3 {
+    font-weight: 300;
+    padding-top: 20px;
 }
 
-@media (max-width: 767px) {
-    .responsive {
-        position: relative;
-        top: 70px;
-        left: -270px;
-        height: 340px;
-        width: 200px;
-    }
 
-    .menu a.icon {
-        font-size: 25px;
-    }
 
-    .logo {
-        height: 70px;
-    }
-
-    .logo a .farfalla {
-        width: 50px;
-
-    }
-
-    .logo a h1 {
-        font-size: 30px;
-    }
-}
-
-@media (max-width: 480px) {
-    .responsive {
-        position: relative;
-        top: 50px;
-        left: -300px;
-        height: 340px;
-        width: 200px;
-    }
-
-    .menu a.icon {
-        font-size: 25px;
-    }
-
-    .logo {
-        height: 50px;
-    }
-
-    .logo a .farfalla {
-        width: 40px;
-
-    }
-
-    .logo a h1 {
-        padding-top: 0;
-        padding-right: 0;
-        font-size: 27px;
-    }
-
-    .menu ul {
-        padding-top: 0;
-    }
-
-    .menu ul li {
-        padding-top: 0;
-    }
-}
-
-@media (max-width: 320px) {
-    .responsive {
-        position: relative;
-        top: 30px;
-        left: -300px;
-        height: 340px;
-        width: 200px;
-    }
-
-    .menu a.icon {
-        font-size: 20px;
-    }
-
-    .logo {
-        height: 30px;
-    }
-
-    .logo a .farfalla {
-        width: 30px;
-
-    }
-
-    .logo a h1 {
-
-        font-size: 20px;
-    }
-}

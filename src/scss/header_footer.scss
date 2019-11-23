@@ -1,0 +1,154 @@
+.header_top {
+    background: burlywood;
+}
+
+.logo {
+    text-align: center;
+    padding-left: 0;
+    padding-right: 0;
+    height: 100px;
+    display: flex;
+}
+
+.logo a .sicil {
+    margin-left: 80px;
+    width: 150px;
+
+}
+
+
+.navigation {
+    margin-left: 70px;
+}
+
+.menu li {
+    display: inline-block;
+    padding: 30px 0;
+    font-size: 15px;
+    font-family: 'Liu Jian Mao Cao', cursive;
+
+}
+
+.menu li a {
+
+    text-transform: uppercase;
+    color: #633e57;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.menu li a:hover {
+    border-bottom: 2px solid white;
+    color: white;
+}
+
+.menu a {
+    margin: 0 10px;
+}
+
+.menu .icon {
+    display: none;
+}
+
+#myBtn {
+    text-transform: uppercase;
+    background-color: burlywood;
+    font-weight: 700;
+    color: #633e57;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+    font-family: 'Liu Jian Mao Cao', cursive;
+}
+
+#myBtn:hover {
+    color: white;
+    border-bottom: 2px solid white;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    position: relative;
+    background-color: #E1BEE7;
+    margin: auto;
+    padding: 0;
+    border: 5px solid white;
+    width: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+@keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0
+    }
+
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
+
+.close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header {
+    padding: 2px 16px;
+    background-color: red;
+    color: white;
+}
+
+.modal-body {
+    color: white;
+    background-color: green;
+    padding: 2px 16px;
+}
+
+.modal-footer {
+    padding: 2px 16px;
+    background-color: green;
+    color: white;
+}
+
+.footer_top {
+    background: burlywood;
+}
+
+.footer_bottom {
+    height: 100px;
+    margin-top: 50px;
+    display: flex;
+}
+
+.footer_1 img {
+    height: 100px;
+}
+.footer_2 {
+    padding: 30px;
+}
