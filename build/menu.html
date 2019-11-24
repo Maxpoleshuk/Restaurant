@@ -6,163 +6,371 @@
     <link rel="icon" href="img/logo/logo.png" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css?family=Bowlby+One+SC&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Liu+Jian+Mao+Cao&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/main.scss">
-    <title>Farfalla</title>
+    <link rel="stylesheet" href="css/main.css">
+    <title>Il Siciliano</title>
 </head>
 
 <body>
     <header>
         <div class="header_top">
             <div class="container">
-                <div class="logo"> <a href="index.html"><img src="img/logo/logo.png" alt="Farfalla"
-                            class="farfalla"></a>
-                    <a href="index.html">
-                        <h1>Farfalla</h1>
-                    </a>
+                <div class="logo">
+                    <a href="index.html"><img src="img/logo/logo.png" alt="logo" class="sicil"></a>
+    
                     <nav class="navigation">
-                        <div class="menu">
+                        <div class="menu" id="myMenu">
                             <ul>
-                                <li><a href="index.html">Главная</a></li>
+                                <li><a href="index.html">О ресторане</a></li>
                                 <li><a href="menu.html">Наше меню</a> </li>
                                 <li><a href="contact.html">Связь с нами</a> </li>
-                                <li><a href="service.html">Наши услуги</a> </li>
+                                <li><a href="photo.html">Галерея</a> </li>
                                 <li><a href="comments.html">Отзывы</a> </li>
+                                <li> <button id="myBtn">Забронировать столик</button></li>
+                                <li><a href="#" id="icon" class="icon">&#9776;</a></li>
                             </ul>
                         </div>
                     </nav>
+    
+    
+                    <div id="myModal" class="modal">
+    
+    
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                    <span class="close">&times;</span>
+                                <h2>Забронировать столик</h2>
+                                
+                            </div>
+                            <div class="modal-body">
+                                <form method="post">
+                                    <div class="button_list">
+                                       
+                                        <p>Ваше имя</p>
+                                        <input required type="text" name="firstname" placeholder="Как Вас зовут?" />
+                                        <p>Контактный номер телефона:</p>
+                                        <input required type="tel" name="nomber" placeholder="+375(xx)xxx-xx-xx"
+                                            minlength="15" value="" />
+    
+                                        <p>Дата мероприятия</p>
+                                        <input required type="date" name="dateX" /><br />
+                                        <input id="button_1" type="reset" value="Clear">
+                                        <input id="button_2" type="submit" value="Sent">
+                                        <div class="search_form__text"></div>
+                                    </div>
+                                </form>
+                            </div>
+    
+                        </div>
+    
+                    </div>
+    
+    
+    
+    
                 </div>
+    
             </div>
         </div>
     </header>
 
     <div class="container">
-        <div class="menu_comment">
-            <p>
-                Ресторан Farfalla - оригинальные рецепты различных регионов Италии. Каждый предмет представлен как
-                произведение искусства. Шеф-повар Майкл Фаттах лично организует свою кулинарную команду каждый вечер,
-                когда
-                они готовят специальные блюда, чтобы порадовать своих посетителей и улучшить его стандартное меню.
-                <br>
-                Пожалуйста, выберите раздел ниже, чтобы просмотреть наши текущие предложения меню.
-                <br>
-                Наша кухня отличается свежестью и вкусом.
-                Все наши блюда готовятся на заказ. Это требует времени для подготовки.
-            </p>
-        </div>
-    </div>
-    <div class="menu">
-        <div class="container">
-            <div class="menu_list">
-                <div class="snack">
-                    <h2>Закуски</h2>
-                    <div class="snack_1">
-                        <h3>Ассорти сицилийских солений</h3>
-                        <p>15р</p>
-                    </div>
-                    <div class="snack_2">
-                        <h3>Сырная тарелка</h3>
-                        <p>22p</p>
-                    </div>
-                    <div class="snack_3">
-                        <h3>Мясные деликатесы</h3>
-                        <p>16p</p>
-                    </div>
-                    <div class="snack_4">
-                        <h3>Тартар из мраморной говядины с перепелиным яйцом, кремом из рикотты</h3>
-                        <p>29p</p>
-                    </div>
-                    <div class="snack_5">
-                        <h3>Тартар из лосося с корнеплодами и греческим йогуртом</h3>
-                        <p>21p</p>
-                    </div>
-                    <div class="snack_6">
-                        <h3>Карпачо из мраморной говядины</h3>
-                        <p>26p</p>
-                    </div>
+        <div class="food_top">
+            <div class="food_h">
+                <h1>Закуски и салаты</h1>
+            </div>
+            <div class="food_bottom">
+                <div class="food">
+                    <h3>Тартар из лосося с корнеплодами и греческим йогуртом</h3>
+                    <p>22p</p>
+                    <h3>Тартар из мраморной говядины с перепелиным яйцом, кремом из рикотты</h3>
+                    <p>28p</p>
+                    <h3>Карпачо из лосося с овощами и гранатовым соусом</h3>
+                    <p>23p</p>
+                    <h3>Зеленый салат с авокадо и бобами эдамаме</h3>
+                    <p>22p</p>
+                    <h3>Цезарь с куриной грудкой, мини романо и травами</h3>
+                    <p>18p</p>
+                    <h3>Салат с первой фалангой краба авокадо, страчателлой и рукколой</h3>
+                    <p>36p</p>
                 </div>
-                <div class="salat">
-                    <h2>Салаты</h2>
-                    <div class="salat_1">
-                        <h3>Цезарь с креветками</h3>
-                        <p>22p</p>
-                    </div>
-                    <div class="salat_2">
-                        <h3>Салат из томатов с красным луком и запеченной рикоттой</h3>
-                        <p>18p</p>
-                    </div>
-                    <div class="salat_3">
-                        <h3>Салат с первой фалангой краба авокадо, страчателлой и рукколой</h3>
-                        <p>35p</p>
-                    </div>
-                    <div class="salat_4">
-                        <h3>Салат со средиземноморским осьминогом картофелем, артишоками, таджасскими маслинами</h3>
-                        <p>36p</p>
-                    </div>
-                    <div class="salat_5">
-                        <h3>Салат с каракатицей, креветками радиккьо и сыром пармезан</h3>
-                        <p>27р</p>
-                    </div>
-                    <div class="salat_6">
-                        <h3>Салат с тунцом листьями салата и азиатским соусом</h3>
-                        <p>21p</p>
-                    </div>
+                <div class="food">
+                    <h3>Моцарелла с овощами на гриле и диким орегано</h3>
+                    <p>21p</p>
+                    <h3>Салат со средиземноморским осьминогом картофелем, артишоками, таджасскими маслинами</h3>
+                    <p>37p</p>
+                    <h3>Вителло тоннато</h3>
+                    <p>24p</p>
+                    <h3>Салат с говядиной под азиатским соусом</h3>
+                    <p>29p</p>
+                    <h3>Цезарь с креветками</h3>
+                    <p>23p</p>
+                    <h3>Тиродитто по-сицилийски с сибасом, креветками и манго</h3>
+                    <p>19p</p>
                 </div>
             </div>
-            <div class="menu_list">
-                <div class="gor">
-                    <h2>Горячие закуски</h2>
-                    <div class="gor_1">
-                        <h3>Баклажаны по-пармски</h3>
-                        <p>20p</p>
-                    </div>
-                    <div class="gor_2">
-                        <h3>Мини кальмар «A la Putanesca» с таджасскими маслинами и каперсами</h3>
-                        <p>30p</p>
-                    </div>
-                    <div class="gor_3">
-                        <h3>Жареные гребешки с коппой, спаржей и кремом из цукини</h3>
-                        <p>36p</p>
-                    </div>
-                    <div class="gor_4">
-                        <h3>Фритто мисто из кальмаров и креветок</h3>
-                        <p>27p</p>
-                    </div>
+        </div>
+        <div class="pic">
+                <img src="img/menu/food/food1.jpg" alt="food">
+                <img src="img/menu/food/food2.jpg" alt="food">
+                <img src="img/menu/food/food3.jpg" alt="food">
+                <img src="img/menu/food/food4.jpg" alt="food">
+            </div>
+        <div class="food_top">
+            <div class="food_h">
+                <h1>Горячие закуски</h1>
+            </div>
+            <div class="food_bottom">
+                <div class="food">
+                    <h3>Баклажаны по-пармски</h3>
+                    <p>21p</p>
+                    <h3>Жареные гребешки с коппой, спаржей и кремом из цукини</h3>
+                    <p>36p</p>
 
                 </div>
-                <div class="pasta">
-                    <h3>Паста и ризотто</h3>
-                    <div class="pasta_1">
-                        <h3>Спагетти с песто из миндаля и сибасом</h3>
-                        <p>21p</p>
-                    </div>
-                    <div class="pasta_2">
-                        <h3>Тальятелли с черным трюфелем</h3>
-                        <p>22p</p>
-                    </div>
-                    <div class="pasta_3">
-                        <h3>Ризотто с белыми грибами и сыром маскарпоне</h3>
-                        <p>24p</p>
-                    </div>
-                    <div class="pasta_4">
-                        <h3>Ризотто с чернилами каракатицы и боттаргой</h3>
-                        <p>28p</p>
-                    </div>
-                    <div class="pasta_5">
-                        <h3>Ризотто со спаржей и креветками</h3>
-                        <p>33p</p>
-                    </div>
-                    <div class="pasta_6">
-                        <h3>Спагетти «Карбонара» с цуккини</h3>
-                        <p>21p</p>
-                    </div>
+                <div class="food">
+                    <h3>Мини кальмар «A la Putanesca» с таджасскими маслинами и каперсами</h3>
+                    <p>31p</p>
+                    <h3>Фритто мисто из кальмаров и креветок</h3>
+                    <p>27p</p>
+
                 </div>
             </div>
         </div>
+        <div class="pic">
+                <img src="img/menu/food/food5.jpg" alt="food">
+                <img src="img/menu/food/food6.jpg" alt="food">
+                <img src="img/menu/food/food7.jpg" alt="food">
+                <img src="img/menu/food/food8.jpg" alt="food">
+            </div>
+        <div class="food_top">
+            <div class="food_h">
+                <h1>Супы</h1>
+            </div>
+            <div class="food_bottom">
+                <div class="food">
+                    <h3>Минестроне</h3>
+                    <p>21p</p>
+                    <h3>Страчателла по-римски</h3>
+                    <p>18p</p>
+                    <h3>Крем-суп из моркови с креветками и тимьяном</h3>
+                    <p>18p</p>
+
+                </div>
+                <div class="food">
+                    <h3>Крем-суп из спаржи</h3>
+                    <p>19p</p>
+                    <h3>Суп с морепродуктами по-средиземноморски</h3>
+                    <p>27p</p>
+                    <h3>Крем-суп из тыквы с копченым лососем</h3>
+                    <p>18p</p>
+
+                </div>
+            </div>
+        </div>
+        <div class="pic">
+                <img src="img/menu/food/food9.jpg" alt="food">
+                <img src="img/menu/food/food10.jpg" alt="food">
+                <img src="img/menu/food/food11.jpg" alt="food">
+                <img src="img/menu/food/food12.jpg" alt="food">
+            </div>
+        <div class="food_top">
+            <div class="food_h">
+                <h1>Паста и ризотто</h1>
+            </div>
+            <div class="food_bottom">
+                <div class="food">
+                    <h3>Казаречче «Alla Norma» с баклажанами и запеченной рикоттой</h3>
+                    <p>18p</p>
+                    <h3>Спагетти с песто из миндаля и сибасом</h3>
+                    <p>22p</p>
+                    <h3>Тальятелли с черным трюфелем</h3>
+                    <p>21p</p>
+                    <h3>Тальолини с барабулькой изюмом и диким сицилийским фенхелем</h3>
+                    <p>25p</p>
+                    <h3>Фетучини с мясом краба</h3>
+                    <p>39p</p>
+                    <h3>Пенне «Аррабьята»</h3>
+                    <p>15p</p>
+
+                </div>
+                <div class="food">
+                    <h3>Пенне с креветками и фисташками</h3>
+                    <p>27p</p>
+                    <h3>Лингвини с омаром</h3>
+                    <p>45p</p>
+                    <h3>Трофье с каракатицей и песто из базилика</h3>
+                    <p>24p</p>
+                    <h3>Спагетти «Карбонара» с цуккини</h3>
+                    <p>23p</p>
+                    <h3>Равиоли с креветками, сибасом, цуккини и шафраном</h3>
+                    <p>30p</p>
+                    <h3>Ризотто со спаржей и креветками</h3>
+                    <p>33p</p>
+
+
+                </div>
+            </div>
+        </div>
+        <div class="pic">
+                <img src="img/menu/food/food13.jpg" alt="food">
+                <img src="img/menu/food/food14.jpg" alt="food">
+                <img src="img/menu/food/food15.jpg" alt="food">
+                <img src="img/menu/food/food16.jpg" alt="food">
+            </div>
+        <div class="food_top">
+            <div class="food_h">
+                <h1>Горячие блюда</h1>
+            </div>
+            <div class="food_bottom">
+                <div class="food">
+                    <h3>Дорадо «Alla Mugnaia» со шпинатом</h3>
+                    <p>34p</p>
+                    <h3>Сибас с картофелем, цуккини и средиземноморскими травами</h3>
+                    <p>26p</p>
+                    <h3>Жареный лосось на креме из брокколи</h3>
+                    <p>31p</p>
+                    <h3>Скумбрия с гороховым пюре</h3>
+                    <p>24p</p>
+                    <h3>Барабулька в сицилийской панировке с томатами черри и каперсами</h3>
+                    <p>25p</p>
+                    <h3>Тунец с овощной капонатой по-сицилийски</h3>
+                    <p>39p</p>
+
+                </div>
+                <div class="food">
+                    <h3>Средиземноморский осьминог с картофельным пюре и трюфелем</h3>
+                    <p>57p</p>
+                    <h3>Говяжья вырезка «Al Pepe Verde»</h3>
+                    <p>46p</p>
+                    <h3>Говяжьи щечки с пюре из сельдерея и булгуром</h3>
+                    <p>24p</p>
+                    <h3>Говяжья вырезка с соусом из белых грибов</h3>
+                    <p>48p</p>
+                    <h3>Оссобуко по-милански на ризотто с шафраном</h3>
+                    <p>36p</p>
+                    <h3>Свиная грудинка, карамелизированная в мёде с пюре из тыквы</h3>
+                    <p>26p</p>
+
+
+                </div>
+            </div>
+        </div>
+        <div class="pic">
+                <img src="img/menu/food/food17.jpg" alt="food">
+                <img src="img/menu/food/food18.jpg" alt="food">
+                <img src="img/menu/food/food19.jpg" alt="food">
+                <img src="img/menu/food/food20.jpg" alt="food">
+            </div>
+        <div class="food_top">
+            <div class="food_h">
+                <h1>Гриль</h1>
+            </div>
+            <div class="food_bottom">
+                <div class="food">
+                    <h3>Тигровые креветки (100 г)</h3>
+                    <p>15p</p>
+                    <h3>Дорадо (100 г) (в соли, запеченная, на гриле)</h3>
+                    <p>13p</p>
+                    <h3>Сибас (100 г) (в соли, запеченный, на гриле)</h3>
+                    <p>13p</p>
+                    <h3>Камбала (100 г) (запеченная с картофелем, томатали и оливками)</h3>
+                    <p>15p</p>
+                    <h3>Кальмары</h3>
+                    <p>18p</p>
+                    <h3>Филе дорадо</h3>
+                    <p>22p</p>
+
+                </div>
+                <div class="food">
+                    <h3>Филе сибаса</h3>
+                    <p>21p</p>
+                    <h3>Филе лосося</h3>
+                    <p>30p</p>
+                    <h3>Цыпленок с травами</h3>
+                    <p>24p</p>
+                    <h3>Грильята из рыбы и морепродуктов (кальмары, креветки, осьминог, сибас)</h3>
+                    <p>45p</p>
+                    <h3>Говяжья вырезка</h3>
+                    <p>33p</p>
+                    <h3>Стриплойн</h3>
+                    <p>36p</p>
+
+
+                </div>
+            </div>
+        </div>
+        <div class="pic">
+                <img src="img/menu/food/food1.jpg" alt="food">
+                <img src="img/menu/food/food2.jpg" alt="food">
+                <img src="img/menu/food/food3.jpg" alt="food">
+                <img src="img/menu/food/food4.jpg" alt="food">
+            </div>
+        <div class="food_top">
+            <div class="food_h">
+                <h1>Десерты</h1>
+            </div>
+            <div class="food_bottom">
+                <div class="food">
+                    <h3>Тирамису</h3>
+                    <p>15p</p>
+                    <h3>Пудинг по-пьемонтски</h3>
+                    <p>15p</p>
+                    <h3>Миндальный семифреддо с шоколадным соусом</h3>
+                    <p>13p</p>
+                    <h3>Канноло по-сицилийски</h3>
+                    <p>12p</p>
+                    <h3>Фондан с лесными орехами</h3>
+                    <p>15p</p>
+                    
+
+                </div>
+                <div class="food">
+                    <h3>Миндальный баварезе с мандариновым желе</h3>
+                    <p>14p</p>
+                    <h3>Кофейный баварезе</h3>
+                    <p>12p</p>
+                    <h3>Панна-котта с малиновым соусом</h3>
+                    <p>15p</p>
+                    <h3>Джелато
+                        (мандарин, манго, малина, фисташка, фундук, пломбир, шоколад)</h3>
+                    <p>6p</p>
+                    <h3>Теплый наполеон с заварным кремом</h3>
+                    <p>13p</p>
+
+
+                </div>
+            </div>
+        </div>
+        <div class="pic_last">
+                <img src="img/menu/food/food19.jpg" alt="food">
+                <img src="img/menu/food/food20.jpg" alt="food">
+                <img src="img/menu/food/food13.jpg" alt="food">
+            </div>
+
     </div>
+
     <footer>
-
+        <div class="footer_top">
+            <div class="container">
+                <div class="footer_bottom">
+                    <div class="footer_1">
+                        <img src="img/logo/logo.png" alt="logo">
+                    </div>
+                    <div class="footer_2">
+                        <p> Москва, Кутузовский проспект, 17</p>
+                    </div>
+                    <div class="footer_3">
+                        <div class="social_1"></div>
+                        <div class="social_2"></div>
+                        <div class="social_3"></div>
+                    </div>
+                </div>
+            </div>
+    
+        </div>
+    
     </footer>
-
+    <script src="js/main.js"></script>
 </body>
 
 </html>

@@ -78,18 +78,17 @@
     overflow: auto;
     background-color: rgb(0, 0, 0);
     background-color: rgba(0, 0, 0, 0.4);
+    
 }
 
 .modal-content {
     position: relative;
-    background-color: #E1BEE7;
     margin: auto;
-    padding: 0;
     border: 5px solid white;
-    width: 50%;
+    width: 35%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     animation-name: animatetop;
-    animation-duration: 0.4s
+    animation-duration: 0.4s;
 }
 
 @keyframes animatetop {
@@ -105,10 +104,11 @@
 }
 
 .close {
-    color: white;
-    float: right;
+    color: #633e57;
     font-size: 28px;
     font-weight: bold;
+    float: right;
+    margin-right: 20px;
 }
 
 .close:hover,
@@ -119,21 +119,24 @@
 }
 
 .modal-header {
-    padding: 2px 16px;
-    background-color: red;
-    color: white;
+    padding-top: 30px;
+    background: burlywood;
+    color: #633e57;    
 }
 
 .modal-body {
-    color: white;
-    background-color: green;
-    padding: 2px 16px;
+    background: burlywood;
+    
 }
 
-.modal-footer {
-    padding: 2px 16px;
-    background-color: green;
-    color: white;
+.button_list {
+    padding-bottom: 30px;
+}
+#button_1, #button_2 {
+    padding: 20px;
+    background: #633e57;
+    border-radius: 70%;
+    cursor: pointer;
 }
 
 .footer_top {
@@ -142,7 +145,7 @@
 
 .footer_bottom {
     height: 100px;
-    margin-top: 50px;
+    
     display: flex;
 }
 

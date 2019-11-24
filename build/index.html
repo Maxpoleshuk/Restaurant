@@ -6,8 +6,8 @@
     <link rel="icon" href="img/logo/logo.png" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css?family=Bowlby+One+SC&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Liu+Jian+Mao+Cao&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/main.scss">
-    <title>Farfalla</title>
+    <link rel="stylesheet" href="css/main.css">
+    <title>Il Siciliano</title>
 </head>
 
 <body>
@@ -15,88 +15,162 @@
         <div class="header_top">
             <div class="container">
                 <div class="logo">
-                    <a href="index.html"><img src="img/logo/logo.png" alt="Farfalla" class="farfalla"></a>
-                    <a href="index.html">
-                        <h1>Farfalla</h1>
-                    </a>
+                    <a href="index.html"><img src="img/logo/logo.png" alt="logo" class="sicil"></a>
+    
                     <nav class="navigation">
-                        <div class="menu">
+                        <div class="menu" id="myMenu">
                             <ul>
-                                <li><a href="index.html">Главная</a></li>
+                                <li><a href="index.html">О ресторане</a></li>
                                 <li><a href="menu.html">Наше меню</a> </li>
                                 <li><a href="contact.html">Связь с нами</a> </li>
-                                <li><a href="service.html">Наши услуги</a> </li>
+                                <li><a href="photo.html">Галерея</a> </li>
                                 <li><a href="comments.html">Отзывы</a> </li>
                                 <li> <button id="myBtn">Забронировать столик</button></li>
+                                <li><a href="#" id="icon" class="icon">&#9776;</a></li>
                             </ul>
                         </div>
                     </nav>
-
-
+    
+    
                     <div id="myModal" class="modal">
-
-
+    
+    
                         <div class="modal-content">
                             <div class="modal-header">
-                                <span class="close">&times;</span>
+                                    <span class="close">&times;</span>
                                 <h2>Забронировать столик</h2>
+                                
                             </div>
                             <div class="modal-body">
-                                <p>Сделать форму брони</p>
-                                <p>Сделать форму брони</p>
+                                <form method="post">
+                                    <div class="button_list">
+                                       
+                                        <p>Ваше имя</p>
+                                        <input required type="text" name="firstname" placeholder="Как Вас зовут?" />
+                                        <p>Контактный номер телефона:</p>
+                                        <input required type="tel" name="nomber" placeholder="+375(xx)xxx-xx-xx"
+                                            minlength="15" value="" />
+    
+                                        <p>Дата мероприятия</p>
+                                        <input required type="date" name="dateX" /><br />
+                                        <input id="button_1" type="reset" value="Clear">
+                                        <input id="button_2" type="submit" value="Sent">
+                                        <div class="search_form__text"></div>
+                                    </div>
+                                </form>
                             </div>
-                            <div class="modal-footer">
-                                <h3>Футер модального окна</h3>
-                            </div>
+    
                         </div>
-
+    
                     </div>
-
-
-
-
+    
+    
+    
+    
                 </div>
-
+    
             </div>
         </div>
     </header>
     <div class="container">
         <div class="chef">
-            <div class="mike">
 
+            <div class="bruno" id="bruno">
+                <h1>Ресторан Il Siciliano</h1>
                 <p>
+                    Сицилия – это солнце, море, смешение культур, единение с природой, семейные традиции и любовь –
+                    говорят Ольга и Бруно – создатели проекта Il Siciliano. Именно этими понятиями оперировали они перед
+                    открытием ресторана, а ведь всего этого так не хватает в Москве.
 
-                    Шеф-повар Майкл Фаттах родился в Александрии, Египет, и проходил обучение в Швейцарии. Он работал в
-                    хороших ресторанах в округе Берген, штат Нью-Джерси, в течение 13 лет, прежде чем переехать в Эстеро
-                    и
-                    открыть ресторан Farfalla в 1998 году. Майкл, 23 года шеф-повар, специализируется на изысканных
-                    блюдах
-                    итальянской и континентальной кухни. Он известен своим особенным талантом к ингредиентам при
-                    приготовлении закусок, легкими, но очень ароматными соусами и вкусными домашними десертами.
+
+
                 </p>
-                <img src="img/mike/mike.jpg" alt="chef">
+                <p>
+                    Бруно любит Москву, он покорил ее еще 20 лет назад, но он всегда создавал свою Сицилию в, уже
+                    ставшими культовыми, ресторанах.
+                </p>
+
             </div>
-            <div class="home">
-                <p>Спасибо за ваш интерес к ресторану Farfalla. Мы с большим удовольствием проведем ваш ужин и надеемся,
-                    что сможем помочь вам спланировать ваш особенный вечер. Если вы ищете идеальное место для небольшой
-                    группы или большой вечеринки, наши элегантные столы, отдельные беседки и отдельная столовая подойдут
-                    вам. Наш непревзойденный сервис и внимание к деталям легендарны. Наша национальная кухня получила
-                    высочайшие всемирно известные кулинарные награды. Мы надеемся, что вы выберете ресторан Farfalla,
-                    чтобы попробовать исключительные блюда.
-                    <br>Проведите свой день рождения или юбилейный ужин с нами
-                    и получите один бесплатный домашний десерт.
-                    <br>Атмосфера, качество, индивидуальность. Этим ключевым моментам наше заведение уделяет большое
-                    внимание. Находясь в ресторане Farfalla, вы ощутите гостеприимство, атмосферу домашнего уюта и
-                    индивидуальный подход.
-                </p>
+            <div class="home" id="home">
+                <img src="img/bruno.png" alt="chef">
             </div>
         </div>
+
+        <div class="pic">
+            <img src="img/gallery/gal1.jpg" alt="gallery">
+            <img src="img/gallery/gal2.jpg" alt="gallery">
+            <img src="img/gallery/gal3.jpg" alt="gallery">
+            <img src="img/gallery/gal4.jpg" alt="gallery">
+        </div>
+        <div class="prost">
+            <h1>Пространство Il Siciliano</h1>
+            <p>
+                Пространство Il Siciliano – проект дизайнера Тины Камчатновой. Интерьер лаконичный и стильный,
+                современный, но уютный, в ресторане много света и воздуха. Важно, что ничего не отвлекает гостей от
+                главного – еды! Здесь нет традиционного сицилийского дизайна и элементов декора, Сицилия - в эмоциях и
+                атмосфере. Зал рассчитан на 150 посадочных мест. Днем он залит солнцем, свет которого особенно нежен
+                благодаря полупрозрачным жалюзи, а светлые стены сливаются с панорамными окнами и дают ощущение воздуха.
+                Вечером солируют уютные диваны, теплый приглушенный свет и бокалы вина. Сюда хочется прийти на
+                романтический ужин и весь мир будет у ваших ног.
+            </p>
+        </div>
+        <div class="pic">
+            <img src="img/menu/food/food1.jpg" alt="food">
+            <img src="img/menu/food/food2.jpg" alt="food">
+            <img src="img/menu/food/food3.jpg" alt="food">
+            <img src="img/menu/food/food4.jpg" alt="food">
+        </div>
+        <div class="prost">
+            <h1>Бруно Марино</h1>
+            <p>
+                Бруно Марино – один из первых итальянских Шеф поваров, который приехал в Москву и влюбил страну в
+                итальянскую кухню.
+                Гастрономический почерк Бруно - в акценте на вкусы самих продуктов, которые солируют в тарелке. Он не
+                использует соусы, которые меняют вкус и не признает молекулярную кухню. Бруно – абсолютный классик в
+                еде! Качество продуктов стоит на первом месте.
+            </p>
+            <p>
+                «Многое в приготовлении блюд Бруно перенял у мамы. Мама Бруно научила его готовить живую еду, которая
+                дышит. Она гармоничная и не просто домашняя, а какая-то солнечная» - говорит Ольга.
+            </p>
+            <p>
+                Самая большая страсть Бруно – кормить людей!
+            </p>
+        </div>
+        <div class="pic">
+            <img src="img/menu/food/food5.jpg" alt="food">
+            <img src="img/menu/food/food6.jpg" alt="food">
+            <img src="img/menu/food/food7.jpg" alt="food">
+            <img src="img/menu/food/food8.jpg" alt="food">
+        </div>
+       
+
     </div>
     <footer>
-
+        <div class="footer_top">
+            <div class="container">
+                <div class="footer_bottom">
+                    <div class="footer_1">
+                        <img src="img/logo/logo.png" alt="logo">
+                    </div>
+                    <div class="footer_2">
+                        <p> Москва, Кутузовский проспект, 17</p>
+                    </div>
+                    <div class="footer_3">
+                        <div class="social_1"></div>
+                        <div class="social_2"></div>
+                        <div class="social_3"></div>
+                    </div>
+                </div>
+            </div>
+    
+        </div>
+    
     </footer>
+    
+    <script src="js/main.js"></script>
 
-    <script src="js/script.js"></script>
+
 </body>
 
 </html>

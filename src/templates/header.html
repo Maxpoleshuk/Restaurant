@@ -3,7 +3,7 @@
         <div class="container">
             <div class="logo">
                 <a href="index.html"><img src="img/logo/logo.png" alt="logo" class="sicil"></a>
-                
+
                 <nav class="navigation">
                     <div class="menu" id="myMenu">
                         <ul>
@@ -24,16 +24,29 @@
 
                     <div class="modal-content">
                         <div class="modal-header">
-                            <span class="close">&times;</span>
+                                <span class="close">&times;</span>
                             <h2>Забронировать столик</h2>
+                            
                         </div>
                         <div class="modal-body">
-                            <p>Сделать форму брони</p>
-                            <p>Сделать форму брони</p>
+                            <form method="post">
+                                <div class="button_list">
+                                   
+                                    <p>Ваше имя</p>
+                                    <input required type="text" name="firstname" placeholder="Как Вас зовут?" />
+                                    <p>Контактный номер телефона:</p>
+                                    <input required type="tel" name="nomber" placeholder="+375(xx)xxx-xx-xx"
+                                        minlength="15" value="" />
+
+                                    <p>Дата мероприятия</p>
+                                    <input required type="date" name="dateX" /><br />
+                                    <input id="button_1" type="reset" value="Clear">
+                                    <input id="button_2" type="submit" value="Sent">
+                                    <div class="search_form__text"></div>
+                                </div>
+                            </form>
                         </div>
-                        <div class="modal-footer">
-                            <h3>Футер модального окна</h3>
-                        </div>
+
                     </div>
 
                 </div>

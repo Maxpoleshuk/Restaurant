@@ -58,6 +58,7 @@ p {
 .pic {
     display: flex;
     justify-content: space-around;
+    padding-bottom: 50px;
 }
 .pic img {
     width: 23%;
@@ -65,6 +66,7 @@ p {
 .pic_last {
     display: flex;
     justify-content: space-around;
+    padding-bottom: 50px;
 }
 .pic_last img {
     width: 30%;
@@ -133,5 +135,14 @@ p {
     padding-top: 20px;
 }
 
-
-
+.contact {
+    width: 500px;
+    text-align: center;
+    padding: 0 30%;
+}
+.contact p {
+    padding-top: 30px;
+}
+.contact_h {
+    padding-top: 40px;
+}

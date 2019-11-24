@@ -2,67 +2,132 @@
 <html lang="ru">
 
 <head>
-    <meta charset="UTF-8">
-    <link rel="icon" href="img/logo/logo.png" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css?family=Bowlby+One+SC&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Liu+Jian+Mao+Cao&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/main.scss">
-    <title>Farfalla</title>
+        <meta charset="UTF-8">
+        <link rel="icon" href="img/logo/logo.png" type="image/x-icon">
+        <link href="https://fonts.googleapis.com/css?family=Bowlby+One+SC&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Liu+Jian+Mao+Cao&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/main.css">
+        <title>Il Siciliano</title>
 </head>
 
 <body>
-    <header>
-        <div class="header_top">
-            <div class="container">
-                <div class="logo"> <a href="index.html"><img src="img/logo/logo.png" alt="Farfalla"
-                            class="farfalla"></a>
-                    <a href="index.html">
-                        <h1>Farfalla</h1>
-                    </a>
-                    <nav class="navigation">
-                        <div class="menu">
-                            <ul>
-                                <li><a href="index.html">Главная</a></li>
-                                <li><a href="menu.html">Наше меню</a> </li>
-                                <li><a href="contact.html">Связь с нами</a> </li>
-                                <li><a href="service.html">Наши услуги</a> </li>
-                                <li><a href="comments.html">Отзывы</a> </li>
-                            </ul>
+        <header>
+            <div class="header_top">
+                <div class="container">
+                    <div class="logo">
+                        <a href="index.html"><img src="img/logo/logo.png" alt="logo" class="sicil"></a>
+        
+                        <nav class="navigation">
+                            <div class="menu" id="myMenu">
+                                <ul>
+                                    <li><a href="index.html">О ресторане</a></li>
+                                    <li><a href="menu.html">Наше меню</a> </li>
+                                    <li><a href="contact.html">Связь с нами</a> </li>
+                                    <li><a href="photo.html">Галерея</a> </li>
+                                    <li><a href="comments.html">Отзывы</a> </li>
+                                    <li> <button id="myBtn">Забронировать столик</button></li>
+                                    <li><a href="#" id="icon" class="icon">&#9776;</a></li>
+                                </ul>
+                            </div>
+                        </nav>
+        
+        
+                        <div id="myModal" class="modal">
+        
+        
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                        <span class="close">&times;</span>
+                                    <h2>Забронировать столик</h2>
+                                    
+                                </div>
+                                <div class="modal-body">
+                                    <form method="post">
+                                        <div class="button_list">
+                                           
+                                            <p>Ваше имя</p>
+                                            <input required type="text" name="firstname" placeholder="Как Вас зовут?" />
+                                            <p>Контактный номер телефона:</p>
+                                            <input required type="tel" name="nomber" placeholder="+375(xx)xxx-xx-xx"
+                                                minlength="15" value="" />
+        
+                                            <p>Дата мероприятия</p>
+                                            <input required type="date" name="dateX" /><br />
+                                            <input id="button_1" type="reset" value="Clear">
+                                            <input id="button_2" type="submit" value="Sent">
+                                            <div class="search_form__text"></div>
+                                        </div>
+                                    </form>
+                                </div>
+        
+                            </div>
+        
                         </div>
-                    </nav>
-
-
-
+        
+        
+        
+        
+                    </div>
+        
                 </div>
-
             </div>
-        </div>
-    </header>
-    <div class="container">
-        <div class="rew">
-            <a href="https://esterolifemagazine.com/ristorante-farfalla/" target="_blank"><img
-                    src="img/review/Estero_Life.jpg" alt="comments"></a>
-            <a href="img/review/oct2015.pdf" target="_blank"><img src="img/review/estero_lifestyle.jpg"
-                    alt="comments"></a>
-            <a href="https://www.10best.com/destinations/florida/fort-myers/restaurants/italian/" target="_blank"><img
-                    src="img/review/usatoday.png" alt="review"></a>
-            <a href="../img/review/hot_grill_ristorante.pdf" target="_blank"><img
-                    src="img/review/naplesdailynews.jpg" alt="review"></a>
-            <a href="img/review/BonitaLiving1.pdf" target="_blank"><img src="img/review/bonita1.jpg"
-                    alt="review"></a>
-            <a href="img/review/BonitaLiving2.pdf" target="_blank"><img src="img/review/bonita2.jpg"
-                    alt="review"></a>
-            <a href="img/review/NaplesIllustrated.pdf" target="_blank"><img src="img/review/nimag.jpg"
-                    alt="review"></a>
-            <a href="img/review/niche_1024.jpg" target="_blank"><img src="img/review/news-press.jpg"
-                    alt="review"></a>
-             <a href="img/review/farfalla.pdf" target="_blank"><img src="img/review/gulfcoasting.jpg" alt="review"></a>       
+        </header>
+        <div class="container">
+                <div class="paparacci">
+                        <h1>Пресса о нас</h1>
+                        <img src="img/review/paparacci1.png" alt="review">
+                        <p>Главное, что нужно знать об этом месте, – шеф-поваром там работает Бруно Марино (ранее
+                                «Рыбка», Vesna,
+                                Peshi и другие), входящий в пятерку лучших московских итальянцев, бескомпромиссный
+                                приверженец классики
+                                и в конце концов природный сицилиец. Ресторан он открыл вместе со своей женой Ольгой
+                                Кудиновой, так что
+                                заведение вполне можно назвать семейным; семьей сюда лучше всего и идти, на полдня
+                                минимум.
 
+                        </p>
+                        <img src="img/review/paparacci2.png" alt="review">
+                        <p>
+                                Итальянское настроение пронизывает всех гостей мягкой, ненавязчивой волной с первых
+                                секунд. Приятная
+                                фоновая музыка на итальянском языке, небольшие элементы декора и сервировки, статусный
+                                винный шкаф во
+                                всю стену, на который невозможно не обратить внимания.
+                        </p>
+                        <img src="img/review/paparacci3.png" alt="review">
+                        <p>
+                                И еще раз про Италию: если физически вы в Москве, а мысленно — на солнечной Сицилии, вам
+                                в новый
+                                ресторан Il Siciliano на Кутузовском. Кухню возглавил итальянец Бруно Марино, который
+                                уже много лет
+                                живет и работает в Москве. Помимо вечной пасты и пиццы, в ресторан нужно идти за
+                                знаменитыми
+                                сицилийскими канноли на десерт.
+                        </p>
+                </div>
         </div>
-    </div>
-    <footer>
-
-    </footer>
+        <footer>
+            <div class="footer_top">
+                <div class="container">
+                    <div class="footer_bottom">
+                        <div class="footer_1">
+                            <img src="img/logo/logo.png" alt="logo">
+                        </div>
+                        <div class="footer_2">
+                            <p> Москва, Кутузовский проспект, 17</p>
+                        </div>
+                        <div class="footer_3">
+                            <div class="social_1"></div>
+                            <div class="social_2"></div>
+                            <div class="social_3"></div>
+                        </div>
+                    </div>
+                </div>
+        
+            </div>
+        
+        </footer>
+        <script src="js/main.js"></script>
 
 </body>
 
