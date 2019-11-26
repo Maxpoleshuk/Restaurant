@@ -33,9 +33,12 @@ cursive;
 h1 {
     color: #633e57;
     font-size: 50px;
-    padding-bottom: 30px;
+    padding: 40px 0;
 }
+
 h3 {
+    font-weight: 300;
+    padding-top: 20px;
     color: #633e57;
     font-size: 30px;
 }
@@ -55,27 +58,37 @@ p {
     width: 100%;
     border-radius: 50%;
 }
+
 .pic {
     display: flex;
     justify-content: space-around;
-    padding-bottom: 50px;
+    padding: 50px 0;
 }
+
 .pic img {
     width: 23%;
 }
+
 .pic_last {
     display: flex;
     justify-content: space-around;
     padding-bottom: 50px;
 }
+
 .pic_last img {
     width: 30%;
 }
+
 .prost {
-    padding: 70px 0;
+
     width: 80%;
     margin-left: 10%;
 }
+
+.prost p {
+    padding-top: 30px;
+}
+
 .rew a {
     display: block;
     text-align: center;
@@ -115,24 +128,18 @@ p {
 .snack {
     width: 500px;
 }
+
 .food_bottom {
     display: flex;
     justify-content: space-around;
 }
-.food_top {
-    margin: 50px 0;
-}
 
 .food_h {
     text-align: center;
-    margin: 40px 0;
 }
+
 .food {
     width: 500px;
-}
-.food h3 {
-    font-weight: 300;
-    padding-top: 20px;
 }
 
 .contact {
@@ -140,9 +147,115 @@ p {
     text-align: center;
     padding: 0 30%;
 }
+
+.contact_phone a {
+    color: #633e57;
+}
+
 .contact p {
     padding-top: 30px;
 }
-.contact_h {
-    padding-top: 40px;
+
+
+.social {
+    display: flex;
+    justify-content: center;
+}
+
+.social img {
+    height: 100px;
+    padding: 30px;
+}
+
+.paparacci {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.paparacci img {
+    margin: 40px 0;
+}
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: rgb(0, 0, 0);
+    opacity: 0.8;
+}
+
+.text {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+.dot {
+    cursor: pointer;
+    height: 13px;
+    width: 13px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: 0.4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: 0.4
+    }
+
+    to {
+        opacity: 1
+    }
 }

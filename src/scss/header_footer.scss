@@ -78,7 +78,7 @@
     overflow: auto;
     background-color: rgb(0, 0, 0);
     background-color: rgba(0, 0, 0, 0.4);
-    
+
 }
 
 .modal-content {
@@ -121,18 +121,20 @@
 .modal-header {
     padding-top: 30px;
     background: burlywood;
-    color: #633e57;    
+    color: #633e57;
 }
 
 .modal-body {
     background: burlywood;
-    
+
 }
 
 .button_list {
     padding-bottom: 30px;
 }
-#button_1, #button_2 {
+
+#button_1,
+#button_2 {
     padding: 20px;
     background: #633e57;
     border-radius: 70%;
@@ -145,13 +147,16 @@
 
 .footer_bottom {
     height: 100px;
-    
     display: flex;
 }
 
+
 .footer_1 img {
     height: 100px;
+    margin-left: 80px;
 }
+
 .footer_2 {
-    padding: 30px;
+    margin: 0 20% ;
+    padding: 40px 0;
 }

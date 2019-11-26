@@ -13,11 +13,37 @@
 <body>
     //= templates/header.html
     <div class="container">
-        <div class="gal">
-            <img src="img/gallery/gal1.jpg" alt="photo">
-            <img src="img/gallery/gal2.jpg" alt="photo">
-            <img src="img/gallery/gal3.jpg" alt="photo">
-            <img src="img/gallery/gal4.jpg" alt="photo">
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <div class="numbertext">1/4</div>
+                <img src="img/gallery/gal1.jpg" style="width: 100%" alt="">
+                <div class="text">Text</div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">2/4 </div>
+                <img src="img/gallery/gal2.jpg" style="width: 100%" alt="">
+                <div class="text">Text</div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">3/4</div>
+                <img src="img/gallery/gal3.jpg" style="width: 100%" alt="">
+                <div class="text">Text</div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">4/4</div>
+                <img src="img/gallery/gal4.jpg" style="width: 100%" alt="">
+                <div class="text">Text</div>
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094</a>
+            <a class="next" onclick="plusSlides(1)">&#10095</a>
+            <br>
+            <div style="text-align: center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+
+            </div>
         </div>
     </div>
 
