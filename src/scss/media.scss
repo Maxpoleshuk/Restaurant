@@ -3,6 +3,10 @@
         display: none;
     }
 
+    ul {
+        float: left;
+    }
+
     #myBtn {
         display: none;
     }
@@ -23,12 +27,13 @@
         left: -200px;
         height: 200px;
         width: 200px;
+        z-index: 10;
     }
 
     .responsive a.icon {
         position: absolute;
-        top: -50px;
-        right: -200px;
+        top: -70px;
+        right: -70px;
     }
 
 
@@ -51,8 +56,8 @@
     .responsive ul li #myBtn {
         display: block;
         color: #633e57;
-    text-decoration: none;
-    font-weight: 700;
+        text-decoration: none;
+        font-weight: 700;
     }
 
 
@@ -69,13 +74,12 @@
         width: 200px;
     }
 
-    .logo {
+    .header_top {
         height: 90px;
     }
 
-    .logo a .farfalla {
-        width: 60px;
-
+    .logo img {
+        height: 90px;
     }
 
     .logo a h1 {
@@ -96,13 +100,15 @@
         font-size: 25px;
     }
 
-    .logo {
+    .header_top {
         height: 70px;
     }
 
-    .logo a .farfalla {
-        width: 50px;
-
+    .logo {
+        height: 70px;
+    }
+    .logo img {
+        height: 70px;
     }
 
     .logo a h1 {
@@ -123,13 +129,15 @@
         font-size: 25px;
     }
 
-    .logo {
+    .header_top {
         height: 50px;
     }
 
-    .logo a .farfalla {
-        width: 40px;
-
+    .logo {
+        height: 50px;
+    }
+    .logo img {
+        height: 50px;
     }
 
     .logo a h1 {
