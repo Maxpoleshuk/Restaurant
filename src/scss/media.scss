@@ -2,6 +2,7 @@
     .menu a {
         display: none;
     }
+
     .header_top {
         height: 150px;
     }
@@ -55,6 +56,32 @@
         font-size: 50px;
     }
 
+    .food_bottom {
+        display: block;
+        
+    }
+
+    .food {
+        width: auto;
+        text-align: center;
+    }
+
+    h3 {
+        font-size: 40px;
+    }
+    .footer_top {
+        height: 120px;
+    }
+    .contact {
+        width: auto;
+    }
+    p {
+        font-size: 35px;
+    }
+    .footer_2 {
+        margin: 0 ;
+        padding: 0;
+    }
 
 }
 
@@ -67,11 +94,13 @@
         height: 200px;
         width: 90%;
     }
+
     .responsive a.icon {
         position: absolute;
         top: -70px;
         right: 280px;
     }
+
     .responsive ul li a {
         font-size: 50px;
         border-bottom: 5px solid #633e57;
@@ -84,7 +113,7 @@
     .menu a.icon {
         font-size: 60px;
     }
-   
+
 
     .chef {
         display: block;
@@ -102,7 +131,6 @@
 
     .pic {
         display: block;
-        padding: 0;
         text-align: center;
     }
 
@@ -115,55 +143,32 @@
         width: 100%;
         text-align: center;
     }
+
+    #up {
+        width: 80px;
+        height: 80px;
+    }
+    h3 {
+        font-size: 50px;
+    }
+    .footer_top {
+        height: 140px;
+    }
+    .pic {
+        display: none;
+    }
+    .footer_2 p {
+        font-size: 25px;
+    }
 }
 
-@media (max-width: 767px) {
-    .responsive {
-        top: 100px;
-        left: -70px;
-        height: 200px;
-        width: 90%;
-    }
-    .responsive a.icon {
-        position: absolute;
-        top: -70px;
-        right: 280px;
-    }
-    .responsive ul li a {
-        font-size: 50px;
-        border-bottom: 5px solid #633e57;
-    }
-    .menu a .icon {
-        font-size: 70px;
-    }
-
+@media (max-width: 768px) {
     
 }
 
+
 @media (max-width: 480px) {
-    .responsive {
-        top: 100px;
-        left: -70px;
-        height: 200px;
-        width: 90%;
-    }
-
-    .header_top {
-        height: 150px;
-    }
+    
 }
 
-@media (max-width: 320px) {
-    .responsive {
-        top: 100px;
-        left: -70px;
-        height: 200px;
-        width: 90%;
-    }
-
-    .header_top {
-        height: 150px;
-    }
-
-   
-}
+@media (max-width: 320px) {}

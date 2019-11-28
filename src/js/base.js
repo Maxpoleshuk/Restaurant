@@ -14,7 +14,7 @@ window.onload = function () {
     function scrollToTop() {
         if (scrolled > 0) {
             window.scrollTo(0, scrolled);
-            scrolled = scrolled - 3; //скорость прокрутки
+            scrolled = scrolled - 30; //скорость прокрутки
             timer = setTimeout(scrollToTop, 1);
         } else {
             clearTimeout(timer);
