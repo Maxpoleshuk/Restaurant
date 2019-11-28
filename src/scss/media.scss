@@ -61,9 +61,9 @@
     }
 
 
-
-
 }
+
+
 
 @media (max-width: 992px) {
     .responsive {
@@ -74,16 +74,45 @@
         width: 200px;
     }
 
+    .responsive .icon {
+        top: 45px;
+        left: 260px;
+    }
+
     .header_top {
         height: 90px;
     }
 
+    .logo a .sicil {
+        margin-left: 0;
+    }
+
     .logo img {
         height: 90px;
+        margin: 0;
     }
 
     .logo a h1 {
         font-size: 35px;
+    }
+
+    .chef {
+        display: block;
+    }
+
+    .bruno {
+        width: 100%;
+        margin: 0;
+        text-align: center;
+    }
+
+    .home {
+        width: 100%;
+    }
+
+    .pic img {
+        display: block;
+        padding: 0;
     }
 }
 
@@ -96,10 +125,6 @@
         width: 200px;
     }
 
-    .menu a.icon {
-        font-size: 25px;
-    }
-
     .header_top {
         height: 70px;
     }
@@ -107,6 +132,7 @@
     .logo {
         height: 70px;
     }
+
     .logo img {
         height: 70px;
     }
@@ -125,9 +151,6 @@
         width: 200px;
     }
 
-    .menu a.icon {
-        font-size: 25px;
-    }
 
     .header_top {
         height: 50px;
@@ -136,6 +159,7 @@
     .logo {
         height: 50px;
     }
+
     .logo img {
         height: 50px;
     }
@@ -162,10 +186,6 @@
         left: -300px;
         height: 340px;
         width: 200px;
-    }
-
-    .menu a.icon {
-        font-size: 20px;
     }
 
     .logo {
