@@ -84,7 +84,7 @@
     position: relative;
     margin: auto;
     border: 5px solid white;
-    width: 35%;
+    width: 50%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     animation-name: animatetop;
     animation-duration: 0.4s;
@@ -104,7 +104,7 @@
 
 .close {
     color: #633e57;
-    font-size: 28px;
+    font-size: 35px;
     font-weight: bold;
     float: right;
     margin-right: 20px;
@@ -122,22 +122,40 @@
     background: burlywood;
     color: #633e57;
 }
+.modal-header h2 {
+    font-size: 35px;
+}
 
 .modal-body {
     background: burlywood;
 
 }
-
+.button_list p {
+    font-size: 30px;
+}
 .button_list {
     padding-bottom: 30px;
+}
+.button_list input {
+    height: 30px;
+    border-radius: 5px;
+    border: none;
 }
 
 #button_1,
 #button_2 {
-    padding: 20px;
-    background: #633e57;
-    border-radius: 70%;
+    font-size: 20px;
+    margin-top: 10px;
+    border-radius: 10px;
+    padding: 10px;
     cursor: pointer;
+    border: none;
+}
+#button_1 {
+    background: red;
+}
+#button_2 {
+    background: green;
 }
 
 .footer_top {
