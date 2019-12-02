@@ -1,25 +1,14 @@
 .header_top {
     background: #a79e9e;
+    height: 150px;
 }
-
-.logo {
-    text-align: center;
-    padding-left: 0;
-    padding-right: 0;
-    height: 100px;
+.navigation {
     display: flex;
 }
-
-.logo a .sicil {
-    margin-left: 80px;
-    width: 150px;
+.logo img {
+    height: 150px;
+    margin-left: 280px;
 }
-
-
-.navigation {
-    margin-left: 70px;
-}
-
 .menu li {
     display: inline-block;
     padding: 30px 0;
@@ -45,24 +34,120 @@
     margin: 0 10px;
 }
 
-.menu .icon {
-    display: none;
+#menu__toggle {
+    opacity: 0;
+}
+
+.menu__btn {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    z-index: 19;
+}
+
+
+/* добавляем "гамбургер" */
+.menu__btn>span,
+.menu__btn>span::before,
+.menu__btn>span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #616161;
+}
+
+.menu__btn>span::before {
+    content: '';
+    top: -8px;
+}
+
+.menu__btn>span::after {
+    content: '';
+    top: 8px;
+}
+
+.menu__box {
+    display: block;
+    position: fixed;
+    visibility: hidden;
+    top: 0;
+    left: -100%;
+    width: 300px;
+    height: 100%;
+    margin: 0;
+    padding: 80px 0;
+    list-style: none;
+    text-align: center;
+    background-color: #ECEFF1;
+    box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+    z-index: 9;
+}
+
+/* элементы меню */
+.menu__item {
+    display: block;
+    padding: 12px 24px;
+    color: #633e57;
+    font-family: 'Liu Jian Mao Cao', cursive;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.menu__item:hover {
+    background-color: #CFD8DC;
+}
+
+#menu__toggle:checked~.menu__btn>span {
+    transform: rotate(45deg);
+}
+
+#menu__toggle:checked~.menu__btn>span::before {
+    top: 0;
+    transform: rotate(0);
+}
+
+#menu__toggle:checked~.menu__btn>span::after {
+    top: 0;
+    transform: rotate(90deg);
+}
+
+#menu__toggle:checked~.menu__box {
+    visibility: visible;
+    left: 0;
+}
+
+.menu__btn>span,
+.menu__btn>span::before,
+.menu__btn>span::after {
+    transition-duration: .25s;
+}
+
+.menu__box {
+    transition-duration: .25s;
+}
+
+.menu__item {
+    transition-duration: .25s;
 }
 
 #myBtn {
-    text-transform: uppercase;
-    background: #a79e9e;
-    font-weight: 700;
+    font-weight: 600;
+    background-color: #ECEFF1;
     color: #633e57;
-    font-size: 15px;
     border: none;
     cursor: pointer;
+    font-size: 20px;
     font-family: 'Liu Jian Mao Cao', cursive;
 }
-
 #myBtn:hover {
-    color: white;
-    border-bottom: 2px solid white;
+    background-color: #CFD8DC;
 }
 
 .modal {
@@ -122,6 +207,7 @@
     background: #a79e9e;
     color: #633e57;
 }
+
 .modal-header h2 {
     font-size: 35px;
 }
@@ -130,12 +216,15 @@
     background-color: #c3bcbc;
 
 }
+
 .button_list p {
     font-size: 30px;
 }
+
 .button_list {
     padding-bottom: 30px;
 }
+
 .button_list input {
     height: 30px;
     border-radius: 5px;
@@ -151,9 +240,11 @@
     cursor: pointer;
     border: none;
 }
+
 #button_1 {
     background: red;
 }
+
 #button_2 {
     background: green;
 }
@@ -174,6 +265,6 @@
 }
 
 .footer_2 {
-    margin: 0 20% ;
+    margin: 0 20%;
     padding: 40px 0;
 }

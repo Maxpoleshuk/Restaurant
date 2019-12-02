@@ -46,17 +46,6 @@ window.onclick = function (event) {
         modal.style.display = "none";
     }
 };
-
-//Меню
-
-var menu = document.getElementById('myMenu');
-menu.onclick = function showMenu() {
-    if (menu.className === "menu") {
-        menu.className += " responsive";
-    } else {
-        menu.className = 'menu';
-    }
-}
 //Карусель
 var slideIndex = 1;
 showSlides(slideIndex);
