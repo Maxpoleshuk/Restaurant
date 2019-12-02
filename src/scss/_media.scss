@@ -66,6 +66,9 @@
         width: 60px;
         height: 60px;
     }
+    .modal {
+        z-index: 99;
+    }
 
 }
 
@@ -87,6 +90,9 @@
         content: '';
         top: 12px;
     }
+    .menu__box {
+        width: 100%;
+    }
 
     .text {
         margin-left: 25px;
@@ -106,10 +112,14 @@
         width: 70px;
         height: 70px;
     }
+   
+    
 }
 
 
 @media (max-width: 992px) {
+    
+    
 
     .menu__btn>span,
     .menu__btn>span::before,
@@ -137,7 +147,7 @@
     }
 
     .menu__item {
-        font-size: 25px;
+        font-size: 55px;
     }
 
     .chef {
