@@ -6,6 +6,7 @@
     .header_top {
         height: 150px;
     }
+
     .logo a .sicil {
         height: 150px;
         width: 200px;
@@ -84,28 +85,34 @@
     }
 
     .footer_2 {
-        margin: 0 10% ;
+        margin: 0 10%;
         padding: 65px 0;
     }
+
     .footer_2 p {
         font-size: 25px;
     }
+
     .contact p {
         font-size: 25px;
     }
+
     .contact {
         width: 90%;
         padding: 0;
         text-align: center;
     }
+
     .footer_top {
         height: 150px;
     }
+
     .footer_1 img {
         height: 150px;
         width: 200px;
         margin-left: 40px;
     }
+
     #up {
         width: 60px;
         height: 60px;
@@ -123,6 +130,7 @@
         width: 100%;
         text-align: center;
     }
+
     #up {
         width: 70px;
         height: 70px;
@@ -202,11 +210,6 @@
 
 }
 
-@media (max-width: 768px) {
-    
- 
-}
+@media (max-width: 768px) {}
 
-@media (max-width: 480px) {
-   
-}
+@media (max-width: 480px) {}
