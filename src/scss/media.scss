@@ -50,7 +50,7 @@
 
     .responsive ul {
         width: 90%;
-        background: burlywood;
+        background-color: #c3bcbc;
     }
 
     .responsive ul li #myBtn {
@@ -193,9 +193,6 @@
         font-size: 50px;
     }
 
-    .footer_top {
-        height: 140px;
-    }
 
     .modal-content {
         margin: auto;
@@ -206,15 +203,10 @@
 }
 
 @media (max-width: 768px) {
-    .footer_2 {
-        margin: 0;
-        padding: 50px 0;
-    }
+    
  
 }
 
 @media (max-width: 480px) {
-    .footer_2 {
-        padding: 45px 0;
-    }
+   
 }
