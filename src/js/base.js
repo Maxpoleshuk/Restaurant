@@ -22,10 +22,10 @@ window.onload = function () {
 
         }
     }
-    // if (scrolled > 300) {
-    //     document.getElementById('up').style.display = 'block';
+    // if (scrolled < 50) {
+    //     document.getElementById("up").style.display = "block";
     // } else {
-    //     document.getElementById('up').style.display = 'none';
+    //     document.getElementById("up").style.display = "none";
     // }
 
 }
@@ -90,3 +90,4 @@ function showSlides(n) {
     slides[slideIndex - 1].style.display = "block";
     dots[slideIndex - 1].className += "active";
 }
+
