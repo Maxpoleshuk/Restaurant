@@ -23,11 +23,12 @@
 
     .food {
         width: auto;
-        text-align: center;
+        text-align: left;
     }
 
     h3 {
         font-size: 40px;
+        padding-top: 40px;
     }
 
     .footer_top {
@@ -72,11 +73,10 @@
 }
 
 @media (max-width:1024px) {
-
     .menu__box {
         width: 100%;
     }
-
+   
     .text {
         margin-left: 25px;
     }
@@ -100,7 +100,6 @@
         font-size: 40px;
     }
     
-   
     
 }
 
@@ -186,6 +185,8 @@
 }
 
 @media (max-width: 768px) {
+   
+   
 
     .menu__btn>span,
     .menu__btn>span::before,
