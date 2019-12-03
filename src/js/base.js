@@ -1,10 +1,10 @@
 //Кнопка вверх
-// window.onload = function () {
+window.onload = function () {
 
     var scrolled;
     var timer;
 
-    // document.getElementById('up').onclick = function () {
+    document.getElementById('up').onclick = function () {
         scrolled = window.pageYOffset;
 
         scrollToTop()
@@ -48,7 +48,7 @@ window.onclick = function (event) {
 };
 //Карусель
 var slideIndex = 1;
-// showSlides(slideIndex);
+showSlides(slideIndex);
 
 function plusSlides(n) {
     showSlides(slideIndex += n);
@@ -76,7 +76,6 @@ function showSlides(n) {
         dots[i].className = dots[i].className.replace("active", "");
 
     }
-    // slides[slideIndex - 1].style.display = "block";
-    // dots[slideIndex - 1].className += "active";
+    slides[slideIndex - 1].style.display = "block";
+    dots[slideIndex - 1].className += "active";
 }
-
